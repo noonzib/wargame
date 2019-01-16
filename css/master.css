@@ -1,0 +1,30 @@
+*{
+  margin:0;
+  padding:0;
+  text-decoration: none;
+  list-style: none;
+  color: inherit;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+.center{
+  width: 100%;
+  height: 2050px;
+  background: #191919;
+  color: #FFF;
+}
+.center>div{
+  width: 100%;
+  position: relative;
+  margin: auto;
+  padding-top: 40px;
+}
+.center h4{
+  font-size: 27px;
+  margin-left: 70px;
+}
+.prob{
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+  padding-top: 10px;
+}
