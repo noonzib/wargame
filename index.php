@@ -13,7 +13,7 @@ switch ($argv[1]) {
       include './welcome.php';
       die;
     }
-    
+
 }
 
 ?>
