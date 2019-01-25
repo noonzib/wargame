@@ -18,7 +18,7 @@ if($result->num_rows==1)
   exit();
 }
 
-$signup=mysqli_query($mysqli,"INSERT INTO user (id,pw) values ('$id','$pw')");
+$signup=mysqli_query($mysqli,"INSERT INTO user (id,pw,score) values ('$id','$pw',0)");
 if($signup){
   echo "<script>alert('sign up success');</script>";
   echo '<script>location.href="./login.php";</script>';

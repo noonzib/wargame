@@ -11,11 +11,7 @@ if ($title==NULL || $score==NULL || $text==NULL || $track==NULL || $flag==NULL |
   echo '<script>location.href="./upload.php";</script>';
   exit();
 }
-if ($track=="web" || $track=="rev" || $track="pwn") {
-  echo "<script>alert('only web, rev, pwn change the track!');</script>";
-  echo '<script>location.href="./upload.php";</script>';
-  exit();
-}
+
 include './connect.php';
 
 $check_title="SELECT * from prob WHERE title='$title'";
@@ -37,6 +33,6 @@ if($result_flag->num_flag==1)
 $signup=mysqli_query($mysqli,"INSERT INTO prob (title,score,text,track,flag,author) values ('$title','$score','$text','$track','$flag','$author')");
 if($signup){
   echo "<script>alert('uplord success');</script>";
-  echo '<script>location.href="./prob.php";</script>';
+  echo '<script>location.href="/";</script>';
 }
 ?>

@@ -6,6 +6,8 @@
   $rev_result=$mysqli->query($rev_query);
   $pwn_query="SELECT * FROM prob where track='pwn'";
   $pwn_result=$mysqli->query($pwn_query);
+  include './header.php';
+  include './flag.php';
 ?>
 <!DOCTYPE html>
 <html lang="ko" dir="ltr">
@@ -17,7 +19,6 @@
       <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   </head>
   <body>
-    <?php include './header.php' ?>
     <div class="center">
       <div class="container">
         <h4>Web</h4>
