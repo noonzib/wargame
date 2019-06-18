@@ -43,6 +43,16 @@ body{
   float: left;
   margin: 0 10px;
 }
+.select_box{
+  border:none;
+  outline:none;
+  background: none;
+  color: white;
+  font-size: 18px;
+  width: 80%;
+  float: left;
+  margin: 0 10px;
+}
 .btn{
   width: 100%;
   background: none;

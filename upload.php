@@ -28,7 +28,11 @@ if($id!="admin"){
         <input type="text" placeholder="text" name="text">
       </div>
       <div class="textbox">
-        <input type="text" placeholder="track" name="track">
+        <select class="select_box" name="track">
+          <option value="rev">rev</option>
+          <option value="pwn">pwn</option>
+          <option value="web">web</option>
+        </select>
       </div>
       <div class="textbox">
         <input type="text" placeholder="flag" name="flag">

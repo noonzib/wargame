@@ -1,5 +1,11 @@
 <?php
-$id=$_SESSION['id'];
+
+if (!isset($_SESSION['id'])) {
+  $id="guest";
+}
+else {
+  $id=$_SESSION['id'];
+}
 
 ?>
 

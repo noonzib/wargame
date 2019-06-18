@@ -32,7 +32,7 @@ if($result_flag->num_flag==1)
 }
 $signup=mysqli_query($mysqli,"INSERT INTO prob (title,score,text,track,flag,author) values ('$title','$score','$text','$track','$flag','$author')");
 if($signup){
-  echo "<script>alert('uplord success');</script>";
+  echo "<script>alert('upload success');</script>";
   echo '<script>location.href="/";</script>';
 }
 ?>
