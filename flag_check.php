@@ -10,7 +10,6 @@ if($result->num_rows==1){
   $id=$_SESSION['id'];
   $title=$row['title'];
   $score=$row['score'];
-  $time=date("Y-m-d H:i:s");
   $find="SELECT * from clear_list WHERE id='$id' and title='$title'";
   $find_re=$mysqli->query($find);
   $user="SELECT * from user WHERE id='$id'";
@@ -25,7 +24,7 @@ if($result->num_rows==1){
   }
   $user_sc=$row['score']+$user_row['score'];
   $user_qu="UPDATE user SET score=$user_sc WHERE id='$id'";
-  $query="INSERT INTO clear_list(id,title,score,time) values ('$id','$title',$score,'$time')";
+  $query="INSERT INTO clear_list(id,title) values ('$id','$title')";
   $user_input=mysqli_query($mysqli,$user_qu);
   $input=mysqli_query($mysqli,$query);
   echo "<script>alert('Clear!!');</script>";
