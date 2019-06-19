@@ -7,7 +7,7 @@ $flag=$_POST['flag'];
 $author=$_POST['author'];
 
 if ($title==NULL || $score==NULL || $text==NULL || $track==NULL || $flag==NULL || $author==NULL) {
-  echo "<script>alert('No white space!!');</script>";
+  echo "<script>alert('No empty space!!');</script>";
   echo '<script>location.href="./upload.php";</script>';
   exit();
 }
